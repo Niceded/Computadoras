@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Anuncios Papelería</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+
+    .tab {
+      display: flex;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    .tab button {
+      background-color: #ddd;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+
+    .tab button.active {
+      background-color: #4285f4;
+      color: white;
+    }
+
+    .tabcontent {
+      display: none;
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    .tabcontent.active {
+      display: block;
+    }
+
+    .tabcontent img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Venta de Computadoras</h1>
+
+  <div class="tab">
+    <button onclick="openTab('anuncio1')" class="active">com1</button>
+    <button onclick="openTab('anuncio2')">2</button>
+    <button onclick="openTab('anuncio3')">3</button>
+    <button onclick="openTab('anuncio4')">4</button>
+    <button onclick="openTab('anuncio5')">5</button>
+  </div>
+
+  <div id="anuncio1" class="tabcontent active">
+    <h3>1</h3>
+    <p>1</p>
+    <img src="https://via.placeholder.com/600x300?text=Ofertas+de+la+semana" alt="1">
+  </div>
+
+  <div id="anuncio2" class="tabcontent">
+    <h3>2</h3>
+    <p>2.</p>
+    <img src="https://via.placeholder.com/600x300?text=Regreso+a+clases" alt="2">
+  </div>
+
+  <div id="anuncio3" class="tabcontent">
+    <h3>3</h3>
+    <p>3</p>
+    <img src="https://via.placeholder.com/600x300?text=Nuevos+productos" alt="3">
+  </div>
+
+  <div id="anuncio4" class="tabcontent">
+    <h3>4</h3>
+    <p>4.</p>
+    <img src="https://via.placeholder.com/600x300?text=Descuentos+por+mayoreo" alt="4">
+  </div>
+
+  <div id="anuncio5" class="tabcontent">
+    <h3>5</h3>
+    <p>5.</p>
+    <img src="https://via.placeholder.com/600x300?text=Promoción+especial" alt="5">
+  </div>
+
+  <script>
+    function openTab(tabId) {
+      const tabs = document.querySelectorAll(".tab button");
+      const contents = document.querySelectorAll(".tabcontent");
+
+      tabs.forEach(btn => btn.classList.remove("active"));
+      contents.forEach(content => content.classList.remove("active"));
+
+      document.querySelector(`#${tabId}`).classList.add("active");
+      event.target.classList.add("active");
+    }
+  </script>
+
+</body>
+</html>
