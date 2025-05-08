@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Papelería e internet </title>
+  <title>Mardany</title>
+  <title>Número Celular:2222222</title>
+  <style>
+    body {
+      font-family: KristenITC, sans-serif;
+      background: #50C878;
+      padding: 10px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .tab {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+      justify-content: center;
+    }
+
+    .tab button {
+      background-color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin: 5px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .tab button.active {
+      background-color: gray;
+      color: white;
+    }
+
+    .tabcontent {
+      display: none;
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    .tabcontent.active {
+      display: block;
+    }
+
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+
+    .column {
+      flex: 1 1 30%;
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .column img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .column {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Papelería e Internet</h1>
+  <h1>Mardany</h1>
+
+  <div class="tab">
+    <button onclick="openTab('anuncio1')" class="active">Papeleria</button>
+    <button onclick="openTab('anuncio2')">Computadoras</button>
+    <button onclick="openTab('anuncio3')">Juguetes y Regalos</button>
+    <button onclick="openTab('anuncio4')">Accesorios para celulares</button>
+    <button onclick="openTab('anuncio5')">Lo mas Nuevo</button>
+    <button onclick="openTab('anuncio6')">Articulos de Temporada</button>
+  </div>
+
+  <!-- Anuncio 1 -->
+  <div id="anuncio1" class="tabcontent active">
+    <h3>Papelería</h3>
+    <div class="columns">
+      <div class="column">
+        <img src="https://via.placeholder.com/200x150?text=1" alt="1">
+        <p>1.</p>
+      </div>
+      <div class="column">
+        <img src="https://via.placeholder.com/200x150?text=2" alt="2">
+        <p>2.</p>
+      </div>
+      <div class="column">
+        <img src="https://via.placeholder.com/200x150?text=3" alt="3">
+        <p>3.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Anuncio 2 -->
+  <div id="anuncio2" class="tabcontent">
+    <h3>Computadoras</h3>
+    <div class="columns">
+      <div class="column">
+        <img src="https://via.placeholder.com/200x150?text=1" alt="1">
+        <p>1.</p>
+      </div>
+      <div class="column">
+        <img src="https://via.placeholder.com/200x150?text=2" alt="2">
+        <p>2.</p>
+      </div>
+      <div class="column">
+        <img src="https://via.placeholder.com/200x150?text=3" alt="3">
+        <p>3.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Anuncio 3 -->
+  <div id="anuncio3" class="tabcontent">
+    <h3>Juguetes y Regalos</h3>
+    <div class="columns">
+      <div class="column">
+        <img src="https://via.placeholder.com/200x150?text=1" alt="1">
+        <p>1.</p>
+      </div>
+      <div class="column">
+        <img src="https://via.placeholder.com/200x150?text=2" alt="2">
+        <p>2.</p>
+      </div>
+      <div class="column">
+        <img src="https://via.placeholder.com/200x150?text=3" alt="3">
+        <p>3.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Anuncio 4 -->
+  <div id="anuncio4" class="tabcontent">
+    <h3>Accesorios para celulares</h3>
+    <div class="columns">
+      <div class="column">
+        <img src="https://via.placeholder.com/200x150?text=1" alt="1">
+        <p>1.</p>
+      </div>
+      <div class="column">
+        <img src="https://via.placeholder.com/200x150?text=2" alt="2">
+        <p>2.</p>
+      </div>
+      <div class="column">
+        <img src="https://via.placeholder.com/200x150?text=3" alt="3">
+        <p>3.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Anuncio 5 -->
+  <div id="anuncio5" class="tabcontent">
+    <h3>Lo mas nuevo</h3>
+    <div class="columns">
+      <div class="column">
+        <img src="https://via.placeholder.com/200x150?text=1" alt="1">
+        <p>1.</p>
+      </div>
+      <div class="column">
+        <img src="https://via.placeholder.com/200x150?text=2" alt="2">
+        <p>2.</p>
+      </div>
+      <div class="column">
+        <img src="https://via.placeholder.com/200x150?text=3" alt="3">
+        <p>3.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Anuncio 5 -->
+  <div id="anuncio6" class="tabcontent">
+    <h3>Articulos de Temporada</h3>
+    <div class="columns">
+      <div class="column">
+        <img src="https://via.placeholder.com/200x150?text=1" alt="1">
+        <p>1.</p>
+      </div>
+      <div class="column">
+        <img src="https://via.placeholder.com/200x150?text=2" alt="2">
+        <p>2.</p>
+      </div>
+      <div class="column">
+        <img src="https://via.placeholder.com/200x150?text=3" alt="3">
+        <p>3.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openTab(tabId) {
+      const tabs = document.querySelectorAll(".tab button");
+      const contents = document.querySelectorAll(".tabcontent");
+
+      tabs.forEach(btn => btn.classList.remove("active"));
+      contents.forEach(content => content.classList.remove("active"));
+
+      document.getElementById(tabId).classList.add("active");
+      event.target.classList.add("active");
+    }
+  </script>
+
+</body>
+</html>
